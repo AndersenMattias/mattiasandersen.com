@@ -1,0 +1,65 @@
+export const projectsData = [
+  {
+    id: 1,
+    title: 'Blog Away',
+    Descripton: 'Lorem ipsum dolor',
+    image: 'https://via.placeholder.com/200x200?text=placeholder',
+    tech: [
+      { key: 'MongoDB', value: 'MongoDB' },
+      { key: 'REST', value: 'REST' },
+      { key: 'Node', value: 'Node' },
+      { key: 'React', value: 'React' },
+      { key: 'Typescript', value: 'Typescript' },
+      { key: 'S3', value: 'S3' },
+    ],
+  },
+  {
+    id: 2,
+    title: 'Sudoku',
+    Descripton: 'Lorem ipsum dolor',
+    image: 'https://cdn-icons-png.flaticon.com/512/5190/5190808.png',
+    tech: [
+      { key: 'REST', value: 'REST' },
+      { key: 'Node', value: 'Node' },
+      { key: 'React', value: 'React' },
+      { key: 'Javascript', value: 'Javascript' },
+    ],
+  },
+  {
+    id: 3,
+    title: 'Kosing',
+    Descripton: 'Lorem ipsum dolor',
+    image: 'https://cdn-icons-png.flaticon.com/512/5190/5190808.png',
+    tech: [
+      { key: 'MongoDB', value: 'MongoDB' },
+      { key: 'REST', value: 'REST' },
+      { key: 'Node', value: 'Node' },
+      { key: 'React', value: 'React' },
+      { key: 'Typescript', value: 'Typescript' },
+      { key: 'S3', value: 'S3' },
+    ],
+  },
+  {
+    id: 4,
+    title: 'mattias-andersen.com',
+    Descripton: 'Lorem ipsum dolor',
+    image: 'https://cdn-icons-png.flaticon.com/512/893/893505.png',
+    tech: [
+      { key: 'React', value: 'React' },
+      { key: 'Javascript', value: 'Javascript' },
+      { key: 'S3', value: 'S3' },
+      { key: 'Sass', value: 'Sass' },
+    ],
+  },
+  {
+    id: 5,
+    title: 'First portfolio',
+    Descripton: 'Lorem ipsum dolor',
+    image: 'https://via.placeholder.com/200x200?text=placeholder',
+    tech: [
+      { key: 'HTML', value: 'HTML' },
+      { key: 'CSS', value: 'CSS' },
+      { key: 'Javascript', value: 'Javascript' },
+    ],
+  },
+];
