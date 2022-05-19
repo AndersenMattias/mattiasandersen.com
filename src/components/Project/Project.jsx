@@ -12,20 +12,24 @@ const Project = () => {
       {projectsData.map((project, index) => {
         return (
           <div key={index} className='projectList-container'>
-            <Link to={`/projects/${project.id}`}>
-              <div className='projectList-inner'>
-                <div className='project-imageContainer'>
-                  <img
-                    className='project-image'
-                    src={project.image}
-                    alt='project'
-                  />
-                </div>
-                <div className='project-title'>
-                  <h4>{project.title}</h4>
-                </div>
-              </div>
-            </Link>
+            <div className='projectList-inner'>
+              <Link to={`/projects/${project.id}`}>
+                <img
+                  className='project-image'
+                  src={project.image}
+                  alt='project'
+                />
+              </Link>
+            </div>
+
+            <div className='project-title'>
+              <Link
+                className='project-title--link'
+                to={`/projects/${project.id}`}
+              >
+                <h4>{project.title}</h4>
+              </Link>
+            </div>
 
             <div className='projectList-intro'>
               <div className='intro-txt'>
