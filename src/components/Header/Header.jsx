@@ -12,19 +12,16 @@ const Header = () => {
         </Link>
       </h1>
       <nav className='header-menu'>
-        <ul>
-          <li>
-            <h3 className='header-item'>
-              <Link
-                to={'/projects'}
-                activeclassname='header-item--active'
-                partiallyactive='true'
-              >
-                Projects
-              </Link>
-            </h3>
-          </li>
-        </ul>
+        <h3>
+          <Link
+            className='header-projects'
+            to={'/projects'}
+            activeclassname='header-item--active'
+            partiallyactive='true'
+          >
+            Projects
+          </Link>
+        </h3>
       </nav>
     </header>
   );

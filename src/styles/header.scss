@@ -1,0 +1,73 @@
+@use './variables.scss' as var;
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 100%;
+
+  @include var.laptop {
+    justify-content: space-between;
+  }
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var.$white;
+  text-decoration: none;
+  padding-top: 0.5em;
+}
+
+.header-title {
+  display: flex;
+  font-weight: 600;
+  color: var.$orange;
+  font-size: 3rem;
+
+  @include var.tablet {
+    margin-left: 1.5rem;
+    font-size: 3rem;
+  }
+
+  @include var.smallmobile {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+.header-projects {
+  font-size: 2rem;
+  color: var.$orange;
+
+  &.header-projects:hover {
+    color: var.$orange;
+    text-decoration: underline;
+  }
+
+  @include var.tablet {
+    margin-left: 1.5rem;
+    font-size: 3rem;
+  }
+
+  @include var.smallmobile {
+    font-size: 1.3rem;
+  }
+}
+
+.header-menu {
+  @include var.tablet {
+    margin-right: 1.5rem;
+    h3 {
+      font-size: 2rem;
+    }
+  }
+
+  @include var.smallmobile {
+    margin-right: 1rem;
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
