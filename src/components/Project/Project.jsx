@@ -9,9 +9,9 @@ import '../../styles/projectList.scss';
 const Project = () => {
   return (
     <div className='projects-wrapper'>
-      {projectsData.map((project) => {
+      {projectsData.map((project, index) => {
         return (
-          <div key={project.id} className='projectList-container'>
+          <div key={index} className='projectList-container'>
             <Link to={`/projects/${project.id}`}>
               <div className='projectList-inner'>
                 <div className='project-imageContainer'>
@@ -21,8 +21,8 @@ const Project = () => {
                     alt='project'
                   />
                 </div>
-                <div>
-                  <h4 className='project-title'>{project.title}</h4>
+                <div className='project-title'>
+                  <h4>{project.title}</h4>
                 </div>
               </div>
             </Link>
@@ -32,8 +32,8 @@ const Project = () => {
                 <p>{project.intro}</p>
               </div>
               <div className='tech-container'>
-                {project.tech.map((tech) => (
-                  <IconContainer>
+                {project.tech.map((tech, index) => (
+                  <IconContainer key={index}>
                     <Icon key={tech.key} title={tech.value} />
                   </IconContainer>
                 ))}

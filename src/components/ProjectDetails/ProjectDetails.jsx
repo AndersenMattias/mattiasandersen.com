@@ -11,8 +11,6 @@ const ProjectDetails = () => {
 
   // eslint-disable-next-line
   let project = projectsData.find((x) => x.id == id);
-  console.log(id);
-  console.log(project);
 
   return (
     <div className='projects-wrapper'>
@@ -31,8 +29,8 @@ const ProjectDetails = () => {
             <p>{project.intro}</p>
           </div>
           <div className='tech-container'>
-            {project.tech.map((tech) => (
-              <IconContainer>
+            {project.tech.map((tech, index) => (
+              <IconContainer key={index}>
                 <Icon key={tech.key} title={tech.value} />
               </IconContainer>
             ))}
@@ -54,7 +52,12 @@ const ProjectDetails = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaLink /> <p>{project.hostUrl ? project.hostUrl : 'Ingen Url'}</p>
+            <div className='url-container'>
+              <p className='url-txt'>Live demo:</p>
+              <div>
+                <p>{project.hostUrl ? project.hostUrl : 'Ingen Url'}</p>
+              </div>
+            </div>
           </a>
         </div>
       </div>
