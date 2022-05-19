@@ -13,7 +13,7 @@
   font-size: 3rem;
 
   @include var.laptop {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -36,18 +36,16 @@
   margin: 0.5em;
 
   p {
-    padding-right: 10px;
-    font-size: 1.5em;
+    @include var.mobile {
+      padding-right: 5px;
+      font-size: 1em;
+    }
   }
 
   &:hover {
     .social__icon {
       color: var.$white;
     }
-  }
-
-  p {
-    margin: 0;
   }
 }
 
@@ -59,11 +57,13 @@
 
 .social-github {
   padding-top: 5px;
+  padding-left: 5px;
 }
 
 .social-linkedin {
   color: #007bb5;
   padding-top: 5px;
+  padding-left: 5px;
 }
 
 .social-icon {

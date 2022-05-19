@@ -11,9 +11,9 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1rem;
 
   @include var.mobile {
-    margin-bottom: 1rem;
   }
 }
 
@@ -91,4 +91,22 @@
   color: var.$iconSass;
   border: 2px solid var.$iconSass;
   background-color: var.$black;
+}
+
+.icon--Bootstrap {
+  color: var.$iconBoot;
+  border: 2px solid var.$iconBoot;
+  background-color: var.$white;
+}
+
+.icon--Redux {
+  color: var.$iconRedux;
+  border: 2px solid var.$iconRedux;
+  background-color: var.$white;
+}
+
+.icon--Firebase {
+  color: var.$iconFirebaseBg;
+  border: 2px solid var.$iconFirebaseBg;
+  background-color: var.$white;
 }
