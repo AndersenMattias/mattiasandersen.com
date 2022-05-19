@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { projectsData } from '../../content/projects';
 import { Icon, IconContainer } from '../Icon/Icon';
 
-import { FaGithub, FaLink } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 const ProjectDetails = () => {
   const { id } = useParams();
