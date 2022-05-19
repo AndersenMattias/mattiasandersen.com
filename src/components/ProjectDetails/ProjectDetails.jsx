@@ -7,6 +7,7 @@ import { Icon, IconContainer } from '../Icon/Icon';
 const ProjectDetails = () => {
   const { id } = useParams();
 
+  // eslint-disable-next-line
   let project = projectsData.find((x) => x.id == id);
   console.log(id);
   console.log(project);
