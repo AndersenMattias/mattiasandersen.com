@@ -4,6 +4,8 @@ import { useParams } from 'react-router-dom';
 import { projectsData } from '../../content/projects';
 import { Icon, IconContainer } from '../Icon/Icon';
 
+import { FaGithub, FaLink } from 'react-icons/fa';
+
 const ProjectDetails = () => {
   const { id } = useParams();
 
@@ -13,28 +15,48 @@ const ProjectDetails = () => {
   console.log(project);
 
   return (
-    <div>
-      <h5
-        variant='h5'
-        style={{
-          color: 'rgb(255, 165, 0)',
-          textAlign: 'center',
-          paddingTop: '0.5em',
-        }}
-      >
-        {project.title}
-      </h5>
+    <div className='projects-wrapper'>
+      <div key={project.id} className='projectList-container'>
+        <div className='projectList-inner'>
+          <div className='project-imageContainer'>
+            <img className='project-image' src={project.image} alt='project' />
+          </div>
+          <div>
+            <h4 className='project-title'>{project.title}</h4>
+          </div>
+        </div>
 
-      <div>
-        <img src={project.image} alt='Test' />
-      </div>
-      <p style={{ color: 'black' }}>{project.description}</p>
-      <div className='icons-wrapper'>
-        {project.tech.map((tech) => (
-          <IconContainer>
-            <Icon key={tech.key} title={tech.value} />
-          </IconContainer>
-        ))}
+        <div className='projectList-intro'>
+          <div className='intro-txt'>
+            <p>{project.intro}</p>
+          </div>
+          <div className='tech-container'>
+            {project.tech.map((tech) => (
+              <IconContainer>
+                <Icon key={tech.key} title={tech.value} />
+              </IconContainer>
+            ))}
+          </div>
+        </div>
+
+        <div className='project__links'>
+          <a
+            className='project__link'
+            href={project.githubUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaGithub /> <p>View source</p>
+          </a>
+          <a
+            className='project__link'
+            href={project.hostUrl}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaLink /> <p>{project.hostUrl ? project.hostUrl : 'Ingen Url'}</p>
+          </a>
+        </div>
       </div>
     </div>
   );
