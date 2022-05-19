@@ -1,0 +1,75 @@
+// Colours
+$white: #f2f2f2;
+$black: #000000;
+$yellow: #f0db4f;
+$blue: #1aa7ec;
+$orange: #e47911;
+
+// icon colours
+$iconJs: #f0db4f;
+$iconJsBg: #323330;
+
+$iconMongo: #6ee7b7;
+$iconMongoBg: #043125;
+
+$iconReact: #61dafb;
+$iconReactBg: #12272c;
+
+$iconNode: #6cc24a;
+$iconNodeBg: #215732;
+
+$iconRest: #4a96c2;
+$iconRestBg: #4295c5;
+
+$iconType: #ffffff;
+$iconTypeBg: #007acc;
+
+$iconS3: #e47911;
+$iconS3Bg: #f7f7f7;
+
+$iconSass: #cc6699;
+$iconSassBg: #f7f7f7;
+
+// Font Sizes
+$xxsFont: 12px;
+$xsFont: 14px;
+$defaultsize: 1em;
+$largeFont: 18px;
+$XlFont: 1.5em;
+
+//Media query
+$mobile: 600px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1350px;
+
+// Media query mixins
+@mixin smallmobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$tablet }) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$laptop }) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: #{$desktop }) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
