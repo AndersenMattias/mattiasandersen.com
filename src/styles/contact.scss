@@ -1,0 +1,77 @@
+@use './variables.scss' as var;
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  color: var.$orange;
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+
+  @include var.laptop {
+    font-size: 2rem;
+  }
+}
+
+.contact-links-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.contact-link--mail {
+  a {
+    color: var.$white;
+    text-decoration: underline;
+  }
+}
+
+.contact-link {
+  display: flex;
+  font-weight: 500;
+  margin: 0.5em;
+
+  p {
+    padding-right: 10px;
+    font-size: 1.5em;
+  }
+
+  &:hover {
+    .social__icon {
+      color: var.$white;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.email-icon {
+  color: #b03c2c;
+  padding-top: 15px;
+  padding-left: 8px;
+}
+
+.social-github {
+  padding-top: 5px;
+}
+
+.social-linkedin {
+  color: #007bb5;
+  padding-top: 5px;
+}
+
+.social-icon {
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  color: var.$white;
+
+  &:hover {
+    color: var.$white;
+  }
+}
