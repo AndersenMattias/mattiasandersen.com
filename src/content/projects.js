@@ -2,7 +2,8 @@ export const projectsData = [
   {
     id: 1,
     title: 'Blog Away',
-    Descripton: 'Lorem ipsum dolor',
+    intro: `An application where you can create an account, sign in if you are already a member. Create posts, update your own posts, delete your own posts. Everyone can view the posts, but only members can create a post and access other benefits.`,
+    descripton: 'Lorem ipsum dolor',
     image: 'https://via.placeholder.com/200x200?text=placeholder',
     tech: [
       { key: 'MongoDB', value: 'MongoDB' },
@@ -16,7 +17,8 @@ export const projectsData = [
   {
     id: 2,
     title: 'Sudoku',
-    Descripton: 'Lorem ipsum dolor',
+    intro: `This application was an good challenge, working with two dimensional arrays isn't an easy task. `,
+    descripton: 'Lorem ipsum dolor',
     image: 'https://cdn-icons-png.flaticon.com/512/5190/5190808.png',
     tech: [
       { key: 'REST', value: 'REST' },
@@ -28,8 +30,10 @@ export const projectsData = [
   {
     id: 3,
     title: 'Kosing',
-    Descripton: 'Lorem ipsum dolor',
-    image: 'https://cdn-icons-png.flaticon.com/512/5190/5190808.png',
+    intro: `Having trouble telling your kids to do tasks at home? Well, this app might solve your problems. Parents can create accounts for their children, then assign different tasks that give different points. After certain points are reached, they can for example get that playstation they are always arguing about.`,
+    descripton: 'Lorem ipsum dolor',
+    image:
+      'https://portfolio-mandersen-project-images.s3.eu-north-1.amazonaws.com/Kosing%20startpage.png?response-content-disposition=inline&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCWV1LXdlc3QtMiJIMEYCIQCfbey1hh93KrGtY4rSP38sy6jSWVkOpCHkrQYBqTA1ywIhAIVLdG9oOZOiVN6pYGpmMcUt9qKWmp%2FTSmigf4Am9qpcKu0CCNL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDg3OTIzMjU2MTk3IgyQGxiKW8iNUSW4WCkqwQKMDRkM1X0%2BRorLMiddcQW18A%2F467sc%2FjQus0WXQMLjSugt33L%2FszZ%2Bj%2FRjzZ1WXahhBC%2BoltHCeBW32NEL%2FRmPp9KsnTWQl14t0sBPT9u3fUf8LT75z%2BSONJ8UwLj5tDsDft6rsYjBeDYMKtA0T72I16d3I5w8qM18gNCi64V3Mqtv%2FqK8Bq6fdp5l%2B77FiKZiVtAxMpZtC%2FrOc2QfMkEvEGa8sQLqfBHqB58IW1h9ViNbZNjIJ9jl6acU2Zj9fkceEVPLL154g0SoQsVJ9E0ciUNHGf%2FvJObIxIn6LcahGM71tyHyHPBSa4ZpDutDHJdbwnp7RGnGbvljy0t3BJy7bJa1rV9x3plwLaaFlig6diS76ar3NvfNswNphi8hyQB40T4tpsm3aFjGWDxePtIPt3elbcONTk4wM3f2NjftSpYwovOSlAY6sgLY7F%2BWOBZEd%2FNFdQhcAEdmG%2B7Dn8%2BsO4sVGNHAN2xML6hD50kADBtfShYByHsvOYCkxvMoHDB2RzEZueH%2B7ILDQaQM1xeOxDicT0kOjYJpOlWztIpeex57tePZk7x5q%2BTaKhNWtlyOB8SFhjtO0fv1II0qRe6pgClsIz3tPNP6zWs5vGN3yKHAvaKY0EdCxaV0VST5ihnCohxOrNs4s67iUHn%2BSYRuU6uSXCU2vOnmRr45FjQHBXxATn7w161CWNJVIxFOzmTkI87NFzWcYIqM8WISiwIU7q7gSh4dbrw962wanw5YY3HcBlR5GTdeMt%2B8nu8Cypl8ep4pa1uYxKdC3r6ULavG0uo7Nk3xEHr25RswNO46lnDrOOqaNct4jTW2anj5xIsLZOIz%2BbHi0ry%2BBLw%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220518T164254Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIARI6FCNOC5CHFVCQZ%2F20220518%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Signature=3f5cdd4e77e75ddf856c5b93e8e5267a36f6691fbf42c8ae793452ed249c8540',
     tech: [
       { key: 'MongoDB', value: 'MongoDB' },
       { key: 'REST', value: 'REST' },
@@ -42,7 +46,8 @@ export const projectsData = [
   {
     id: 4,
     title: 'mattias-andersen.com',
-    Descripton: 'Lorem ipsum dolor',
+    intro: `This portfolio website was built with React.js and Sass (scss) for styling.`,
+    descripton: 'Lorem ipsum dolor',
     image: 'https://cdn-icons-png.flaticon.com/512/893/893505.png',
     tech: [
       { key: 'React', value: 'React' },
@@ -54,7 +59,8 @@ export const projectsData = [
   {
     id: 5,
     title: 'First portfolio',
-    Descripton: 'Lorem ipsum dolor',
+    intro: `My first portfolio website, created with simple HTML, CSS and vanilla Js.`,
+    descripton: 'Lorem ipsum dolor',
     image: 'https://via.placeholder.com/200x200?text=placeholder',
     tech: [
       { key: 'HTML', value: 'HTML' },
