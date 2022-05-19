@@ -1,0 +1,65 @@
+@use './variables.scss' as var;
+
+.projects-wrapper {
+  margin-top: 2em;
+}
+
+.projectList-container {
+  margin-bottom: 4rem;
+
+  .projectList-inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &:last-of-type {
+    margin-bottom: 6rem;
+    border-bottom: 0;
+  }
+
+  @include var.mobile {
+    margin-bottom: 2rem;
+  }
+}
+
+.project-title {
+  color: var.$orange;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 50rem;
+  margin-bottom: 1em;
+
+  @include var.mobile {
+    border-radius: 10px;
+  }
+}
+
+.projectList-intro {
+  color: var.$white;
+  text-align: center;
+  &:last-child {
+    margin-bottom: 4rem;
+
+    @include var.laptop {
+      padding: 0.5em 0.5em 1em 1em;
+      margin-bottom: 2rem;
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+  }
+
+  .intro-txt {
+    padding-bottom: 1em;
+  }
+
+  .tech-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.5em;
+  }
+}

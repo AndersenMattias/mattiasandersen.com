@@ -2,7 +2,7 @@
 
 .bio-wrapper {
   margin-top: 4rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -10,7 +10,7 @@
 
   @include mobile {
     margin-top: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
   }
 }
@@ -34,6 +34,8 @@
   font-size: 2rem;
   color: $white;
   text-align: center;
+
+  padding: 1em;
 
   @include mobile {
     font-size: 1.5rem;
