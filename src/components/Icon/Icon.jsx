@@ -7,7 +7,15 @@ import {
   FaAws,
   FaSass,
 } from 'react-icons/fa';
-import { SiMongodb, SiTypescript, SiHtml5, SiCss3 } from 'react-icons/si';
+import {
+  SiMongodb,
+  SiTypescript,
+  SiHtml5,
+  SiCss3,
+  SiFirebase,
+  SiRedux,
+  SiBootstrap,
+} from 'react-icons/si';
 import { AiFillCloud } from 'react-icons/ai';
 
 import '../../styles/icons.scss';
@@ -38,6 +46,12 @@ const IconOptions = ({ title }) => {
       return <FaAws />;
     case 'Sass':
       return <FaSass />;
+    case 'Firebase':
+      return <SiFirebase />;
+    case 'Redux':
+      return <SiRedux />;
+    case 'Bootstrap':
+      return <SiBootstrap />;
     default:
       return <FaCog />;
   }

@@ -39,12 +39,11 @@ export const projectsData = [
     image:
       'https://portfolio-mandersen-project-images.s3.eu-north-1.amazonaws.com/Kosing+startpage.png',
     tech: [
-      { key: 'MongoDB', value: 'MongoDB' },
-      { key: 'REST', value: 'REST' },
-      { key: 'Node', value: 'Node' },
+      { key: 'Firebase', value: 'Firebase' },
       { key: 'React', value: 'React' },
-      { key: 'Typescript', value: 'Typescript' },
-      { key: 'S3', value: 'S3' },
+      { key: 'Redux', value: 'Redux' },
+      { key: 'Javascript', value: 'Javascript' },
+      { key: 'Bootstrap', value: 'Bootstrap' },
     ],
     githubUrl: 'https://github.com/AndersenMattias/Kosing',
     hostUrl: 'https://github.com/AndersenMattias/Kosing',
@@ -54,7 +53,8 @@ export const projectsData = [
     title: 'mattias-andersen.com',
     intro: `This portfolio website was built with React.js and Sass (scss) for styling.`,
     descripton: 'Lorem ipsum dolor',
-    image: 'https://cdn-icons-png.flaticon.com/512/893/893505.png',
+    image:
+      'https://portfolio-mandersen-project-images.s3.eu-north-1.amazonaws.com/portfolio-2.0.png',
     tech: [
       { key: 'React', value: 'React' },
       { key: 'Javascript', value: 'Javascript' },
@@ -69,13 +69,14 @@ export const projectsData = [
     title: 'First portfolio',
     intro: `My first portfolio website, created with simple HTML, CSS and vanilla Js.`,
     descripton: 'Lorem ipsum dolor',
-    image: 'https://via.placeholder.com/200x200?text=placeholder',
+    image:
+      'https://portfolio-mandersen-project-images.s3.eu-north-1.amazonaws.com/first+portfolio.png',
     tech: [
       { key: 'HTML', value: 'HTML' },
       { key: 'CSS', value: 'CSS' },
       { key: 'Javascript', value: 'Javascript' },
     ],
     githubUrl: 'https://github.com/AndersenMattias/Matitas-website',
-    hostUrl: '',
+    hostUrl: 'https://mattias-andersen.netlify.app/',
   },
 ];
