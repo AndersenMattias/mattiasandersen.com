@@ -21,15 +21,15 @@ export const projectsData = [
     title: 'Sudoku',
     intro: `This application was an good challenge, working with two dimensional arrays isn't an easy task. `,
     descripton: 'Lorem ipsum dolor',
-    image: 'https://cdn-icons-png.flaticon.com/512/5190/5190808.png',
+    image:
+      'https://portfolio-mandersen-project-images.s3.eu-north-1.amazonaws.com/sudoku.png',
     tech: [
-      { key: 'REST', value: 'REST' },
-      { key: 'Node', value: 'Node' },
       { key: 'React', value: 'React' },
       { key: 'Javascript', value: 'Javascript' },
+      { key: 'Sass', value: 'Sass' },
     ],
     githubUrl: 'https://github.com/AndersenMattias/sudoku-react-nodejs',
-    hostUrl: 'https://sudoku-react-nodejs.herokuapp.com/',
+    hostUrl: 'https://sudoku-react-application.netlify.app/',
   },
   {
     id: 3,
