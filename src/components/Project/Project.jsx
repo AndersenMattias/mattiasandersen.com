@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { projectsData } from '../../content/projects';
 import { Icon, IconContainer } from '../Icon/Icon';
 
-import '../../styles/projectList.scss';
+import '../../styles/components/_projectList.scss';
 
 const Project = () => {
   return (

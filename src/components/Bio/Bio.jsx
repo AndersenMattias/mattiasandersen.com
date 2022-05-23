@@ -1,7 +1,7 @@
 import React from 'react';
 
 import profilePic from '../../content/assets/profilepic.png';
-import '../../styles/bio.scss';
+import '../../styles/components/_bio.scss';
 
 const Bio = () => {
   return (

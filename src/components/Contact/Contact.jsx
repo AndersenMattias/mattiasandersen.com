@@ -2,7 +2,7 @@ import React from 'react';
 
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
-import '../../styles/contact.scss';
+import '../../styles/components/_contact.scss';
 
 const Contact = () => {
   return (

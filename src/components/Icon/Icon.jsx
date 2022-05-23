@@ -18,7 +18,7 @@ import {
 } from 'react-icons/si';
 import { AiFillCloud } from 'react-icons/ai';
 
-import '../../styles/icons.scss';
+import '../../styles/components/_icons.scss';
 
 export const IconContainer = ({ children }) => {
   return <div className='icon-container'>{children}</div>;
