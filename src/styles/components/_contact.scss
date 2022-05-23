@@ -1,4 +1,4 @@
-@use './variables.scss' as var;
+@use '../abstracts/variables' as *;
 
 .contact-wrapper {
   display: flex;
@@ -7,12 +7,12 @@
 }
 
 .contact-header {
-  color: var.$orange;
+  color: $orange;
   width: 100%;
   text-align: center;
   font-size: 3rem;
 
-  @include var.laptop {
+  @include laptop {
     font-size: 1.8rem;
   }
 }
@@ -25,7 +25,7 @@
 
 .contact-link--mail {
   a {
-    color: var.$white;
+    color: $white;
     text-decoration: underline;
   }
 }
@@ -36,7 +36,7 @@
   margin: 0.5em;
 
   p {
-    @include var.mobile {
+    @include mobile {
       padding-right: 5px;
       font-size: 1em;
     }
@@ -44,7 +44,7 @@
 
   &:hover {
     .social__icon {
-      color: var.$white;
+      color: $white;
     }
   }
 }
@@ -69,9 +69,9 @@
 .social-icon {
   font-size: 2rem;
   margin-left: 0.5rem;
-  color: var.$white;
+  color: $white;
 
   &:hover {
-    color: var.$white;
+    color: $white;
   }
 }

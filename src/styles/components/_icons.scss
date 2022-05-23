@@ -1,0 +1,112 @@
+@use '../abstracts/variables' as *;
+
+.icons-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  @include mobile {
+  }
+}
+
+.icon {
+  font-weight: 500;
+  background-color: $black;
+  display: flex;
+  align-items: center;
+  padding: 0.5em 0.5em;
+  border-radius: 1rem;
+
+  &:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+
+  .icon-title {
+    padding-left: 5px;
+  }
+}
+
+.icon--React {
+  color: $iconReact;
+  border: 2px solid $iconReact;
+  background-color: $iconReactBg;
+}
+
+.icon--MongoDB {
+  color: $iconMongo;
+  border: 2px solid $iconMongo;
+  background-color: $iconMongoBg;
+}
+
+.icon--Node {
+  color: $iconNode;
+  border: 2px solid $iconNode;
+  background-color: $iconNodeBg;
+}
+
+.icon--REST {
+  color: $iconRestBg;
+  border: 2px solid $iconRest;
+  background-color: black;
+}
+
+.icon--HTML {
+  color: $iconHtml;
+  border: 2px solid $iconHtml;
+  background-color: $iconHtmlBg;
+}
+.icon--CSS {
+  color: $iconCss;
+  border: 2px solid $iconCss;
+  background-color: $iconCssBg;
+}
+
+.icon--Javascript {
+  color: $iconJs;
+  border: 2px solid $iconJs;
+  background-color: $iconJsBg;
+}
+
+.icon--Typescript {
+  color: $iconTypeBg;
+  border: 2px solid $iconTypeBg;
+  background-color: #f7f7f7;
+}
+
+.icon--S3 {
+  color: $iconS3;
+  border: 2px solid $white;
+  background-color: $iconS3Bg;
+}
+
+.icon--Sass {
+  color: $iconSass;
+  border: 2px solid $iconSass;
+  background-color: $black;
+}
+
+.icon--Bootstrap {
+  color: $iconBoot;
+  border: 2px solid $iconBoot;
+  background-color: $white;
+}
+
+.icon--Redux {
+  color: $iconRedux;
+  border: 2px solid $iconRedux;
+  background-color: $white;
+}
+
+.icon--Firebase {
+  color: $iconFirebaseBg;
+  border: 2px solid $iconFirebaseBg;
+  background-color: $white;
+}

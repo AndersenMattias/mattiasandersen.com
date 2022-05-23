@@ -1,4 +1,4 @@
-@use './variables.scss' as var;
+@use '../abstracts/variables' as *;
 
 .projects-wrapper {
   margin-top: 1em;
@@ -16,7 +16,7 @@
       max-width: 50%;
       padding-top: 2em;
 
-      @include var.laptop {
+      @include laptop {
       }
     }
 
@@ -25,29 +25,29 @@
       border-bottom: 0;
     }
 
-    @include var.mobile {
+    @include mobile {
     }
   }
 
   .project-title {
-    color: var.$orange;
+    color: $orange;
     font-size: 2.5rem;
     font-weight: 300;
     padding-top: 0.5em;
   }
 
   .project-title--link {
-    color: var.$orange;
+    color: $orange;
   }
 
   /*
   .project-imageContainer {
-    border: 5px solid var.$orange;
+    border: 5px solid $orange;
     border-radius: 5px;
     max-width: 70%;
     margin: 0 auto;
 
-    @include var.tablet {
+    @include tablet {
       max-width: 100%;
     }
   }
@@ -59,15 +59,15 @@
     object-fit: cover;
     display: block;
     margin: 0 auto;
-    border: 5px solid var.$orange;
+    border: 5px solid $orange;
     border-radius: 10px;
   }
 
   .projectList-intro {
-    color: var.$white;
+    color: $white;
     text-align: center;
 
-    @include var.laptop {
+    @include laptop {
       padding: 0 0.5em 0 1em;
       font-size: 1.2em;
     }
@@ -79,12 +79,12 @@
       width: 80%;
       margin: 0 auto;
 
-      @include var.laptop {
+      @include laptop {
         padding: 1em 0 0 0;
         font-size: 1em;
       }
 
-      @include var.smallmobile {
+      @include smallmobile {
         font-size: 1em;
       }
     }
@@ -95,7 +95,7 @@
       gap: 2em;
       padding-top: 2em;
 
-      @include var.tablet {
+      @include tablet {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -105,7 +105,7 @@
     }
   }
 
-  @include var.tablet {
+  @include tablet {
     .tech-container :nth-child(1) {
       grid-area: 1 / 1 / 2 / 2;
     }
@@ -131,7 +131,7 @@
   }
 
   .url-txt {
-    color: var.$orange;
+    color: $orange;
     font-size: 1.2em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;

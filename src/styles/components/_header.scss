@@ -1,4 +1,4 @@
-@use './variables.scss' as var;
+@use '../abstracts/variables' as *;
 
 .header-wrapper {
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: space-around;
   min-width: 100%;
 
-  @include var.laptop {
+  @include laptop {
     justify-content: space-between;
   }
 }
@@ -15,7 +15,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var.$white;
+  color: $white;
   text-decoration: none;
   padding-top: 0.5em;
 }
@@ -23,16 +23,16 @@ a {
 .header-title {
   display: flex;
   font-weight: 600;
-  color: var.$orange;
+  color: $orange;
   font-size: 3rem;
   margin-left: 1.5rem;
 
-  @include var.tablet {
+  @include tablet {
     margin-left: 1.5rem;
     font-size: 3rem;
   }
 
-  @include var.smallmobile {
+  @include smallmobile {
     margin-left: 1rem;
     font-size: 1.2rem;
   }
@@ -40,33 +40,33 @@ a {
 
 .header-projects {
   font-size: 2rem;
-  color: var.$orange;
+  color: $orange;
   margin-right: 1.5rem;
 
   &.header-projects:hover {
-    color: var.$orange;
+    color: $orange;
     text-decoration: underline;
   }
 
-  @include var.tablet {
+  @include tablet {
     margin-right: 0.2rem;
     font-size: 3rem;
   }
 
-  @include var.smallmobile {
+  @include smallmobile {
     font-size: 1.3rem;
   }
 }
 
 .header-menu {
-  @include var.tablet {
+  @include tablet {
     margin-right: 1.5rem;
     h3 {
       font-size: 2rem;
     }
   }
 
-  @include var.smallmobile {
+  @include smallmobile {
     margin-right: 1rem;
     h3 {
       font-size: 1.5rem;
