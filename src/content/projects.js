@@ -19,7 +19,7 @@ export const projectsData = [
   {
     id: 2,
     title: 'Sudoku',
-    intro: `This application was an good challenge, working with two dimensional arrays isn't an easy task. `,
+    intro: `This application was an good challenge.`,
     descripton: 'Lorem ipsum dolor',
     image:
       'https://portfolio-mandersen-project-images.s3.eu-north-1.amazonaws.com/sudoku.png',
