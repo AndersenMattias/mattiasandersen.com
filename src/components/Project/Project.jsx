@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { projectsData } from '../../content/projects';
 import { Icon, IconContainer } from '../Icon/Icon';
 
 import '../../styles/components/_projectList.scss';
