@@ -5,7 +5,7 @@ import { Icon, IconContainer } from '../Icon/Icon';
 
 import '../../styles/components/_projectList.scss';
 
-const Project = ({ project }) => {
+const ProjectItem = ({ project }) => {
   console.log(project);
   return (
     <div className='projects-wrapper'>
@@ -46,4 +46,4 @@ const Project = ({ project }) => {
   );
 };
 
-export default Project;
+export default ProjectItem;

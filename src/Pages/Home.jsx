@@ -1,11 +1,10 @@
 import React from 'react';
-import Bio from '../../components/Bio/Bio';
-import Contact from '../../components/Contact/Contact';
+import { About, Contact } from '../components';
 
 const Home = () => {
   return (
     <>
-      <Bio />
+      <About />
       <Contact />
     </>
   );

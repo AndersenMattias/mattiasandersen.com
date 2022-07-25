@@ -1,9 +1,9 @@
 import React from 'react';
 
-import profilePic from '../../content/assets/profilepic.png';
+import profilePic from '../../assets/profilepic.png';
 import '../../styles/components/_bio.scss';
 
-const Bio = () => {
+const About = () => {
   return (
     <div className='bio-wrapper'>
       <div className='bio-avatar-container'>
@@ -24,4 +24,4 @@ const Bio = () => {
   );
 };
 
-export default Bio;
+export default About;
