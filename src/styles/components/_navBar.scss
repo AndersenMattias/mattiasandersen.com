@@ -1,6 +1,88 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/colours' as *;
 
+#navbar {
+  //position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(18, 30, 39);
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbarList {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links {
+  display: flex;
+  color: white;
+  width: 80%;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 1.2em;
+}
+
+.toggleButton {
+  display: flex;
+  @include for-size(tablet) {
+    display: none;
+  }
+}
+
+.toggleButton svg {
+  font-size: 50px;
+}
+.toggleButton button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.open {
+  height: 100vh;
+}
+
+.open .links {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 100px;
+}
+
+.open a {
+  width: 100%;
+  text-align: center;
+}
+
+.close {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.close a {
+  @include for-size(phone) {
+    display: none;
+  }
+}
+
+/*
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -74,3 +156,6 @@ a {
     }
   }
 }
+
+
+*/

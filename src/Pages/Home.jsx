@@ -1,10 +1,10 @@
 import React from 'react';
-import { About, Contact } from '../components';
+import { Contact, HeroBlock } from '../components';
 
 const Home = () => {
   return (
     <>
-      <About />
+      <HeroBlock />
       <Contact />
     </>
   );

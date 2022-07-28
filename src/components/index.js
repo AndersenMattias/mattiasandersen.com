@@ -1,7 +1,7 @@
-import About from './About';
-import Contact from './Contact';
-import Header from './Header';
-import ProjectItem from './ProjectItem';
-import Footer from './Footer';
+import HeroBlock from './HeroBlock/HeroBlock';
+import Contact from './Contact/Contact';
+import Navbar from './Navbar/Navbar';
+import ProjectItem from './ProjectItem/ProjectItem';
+import Footer from './Footer/Footer';
 
-export { About, Contact, Header, ProjectItem, Footer };
+export { Contact, Navbar, ProjectItem, Footer, HeroBlock };
