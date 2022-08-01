@@ -1,7 +1,7 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/colours' as *;
 
-.hero-wrapper {
+.heroBlock-wrapper {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -12,10 +12,6 @@
     display: flex;
     flex-direction: column;
     padding: 1.2rem 2rem;
-
-    h1 > div {
-      padding-right: 1rem;
-    }
   }
 }
 
@@ -44,17 +40,6 @@
   z-index: 100;
 }
 
-.highlight > div:nth-child(2) {
-  position: absolute;
-  bottom: 0px;
-  width: 100%;
-  height: 40%;
-  transition: width 0.4s ease-in-out 0s;
-  transform: translateX(0.25rem);
-  background: $orange;
-  z-index: -100;
-}
-
 .socialIcons-wrapper {
   @include mobile {
     display: flex;
@@ -67,7 +52,8 @@
 
 .socialIcon {
   @include mobile {
-    color: $orange;
+    // color: #465a9d;
+    color: $darkOrange;
   }
 }
 
