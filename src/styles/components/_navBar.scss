@@ -24,6 +24,13 @@ ul {
 .navbarContainer {
   display: flex;
   justify-content: space-evenly;
+
+  .hamburger,
+  .closeMenu {
+    @include mobile {
+      align-self: center;
+    }
+  }
 }
 
 .links {
@@ -36,7 +43,7 @@ ul {
   color: white;
   text-decoration: none;
   margin: 20px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .toggleButton {

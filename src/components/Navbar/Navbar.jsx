@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { IoReorderThree } from 'react-icons/io5';
+import { AiOutlineClose } from 'react-icons/ai';
 
 import '../../styles/components/_navBar.scss';
 
@@ -14,21 +15,37 @@ const Navbar = () => {
     setExpandNavbar(false);
   }, [location]);
 
+  const hamburgerIcon = (
+    <div className='hamburger'>
+      <IoReorderThree
+        size={40}
+        color='white'
+        onClick={() => {
+          setExpandNavbar((prev) => !prev);
+        }}
+      />
+    </div>
+  );
+
+  const closeIcon = (
+    <div className='closeMenu'>
+      <AiOutlineClose
+        size={20}
+        color='white'
+        onClick={() => {
+          setExpandNavbar((prev) => !prev);
+        }}
+      />
+    </div>
+  );
+
   return (
     <nav id='navbar'>
       <div className='navbarContainer'>
         <Link to='/'>
           <div className=''>Mattias Andersen</div>
         </Link>
-        <div className='toggleButton'>
-          <button
-            onClick={() => {
-              setExpandNavbar((prev) => !prev);
-            }}
-          >
-            <IoReorderThree />
-          </button>
-        </div>
+        {expandNavbar ? closeIcon : hamburgerIcon}
       </div>
 
       <ul className={expandNavbar ? 'open' : 'close'}>
