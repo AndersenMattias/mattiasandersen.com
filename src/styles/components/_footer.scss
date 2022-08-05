@@ -1,0 +1,75 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colours' as *;
+
+footer {
+  position: relative;
+  padding: 2rem clamp(1rem, 7vw, 200px);
+  z-index: 2;
+  background-color: rgb(18, 30, 39);
+}
+
+.footer-wrapper {
+  @include mobile {
+    justify-content: space-between;
+    gap: 0px 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .copyRight-container {
+    @include mobile();
+  }
+
+  .copyRight-container p {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .copyRight-container > div {
+    @include mobile {
+      font-size: 0.8rem;
+      margin: 0.5rem 0;
+      color: #ccc;
+      width: 70%;
+    }
+  }
+
+  .footer-header {
+    @include mobile {
+      font-weight: bold;
+      color: rgb(199, 199, 199);
+      margin: 0.5rem 0;
+    }
+  }
+
+  .footer-gridContainer {
+    @include mobile {
+      display: grid;
+      grid-template-columns: 25% 1fr;
+      gap: 0.5rem 0.5rem;
+
+      a {
+        color: #6495ed;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .footer-headerTwo {
+    @include mobile {
+      color: #ccc;
+      margin: 0.5rem 0;
+    }
+  }
+
+  .socialIcons-footer {
+    @include mobile {
+      display: flex;
+      gap: 1.2em;
+      margin: 0.5rem 0;
+    }
+  }
+}

@@ -15,7 +15,16 @@
 
     h2 {
       display: flex;
-      height: 3rem;
+      align-items: center;
+    }
+
+    h2::before {
+      position: relative;
+      counter-increment: section 1;
+      content: '0' counter(section) '.';
+      margin-right: 10px;
+      color: $blue;
+      font-weight: 400;
     }
 
     .skills-container {
@@ -27,6 +36,10 @@
     .image-container {
       max-width: 12em;
       margin: 0 auto;
+    }
+
+    .image-container img {
+      border-radius: 1.5em;
     }
   }
 
@@ -61,6 +74,7 @@
 
 .bioText a {
   text-decoration: none;
-  color: $darkOrange;
+  color: $blue;
   font-weight: bold;
+  font-size: 1.1em;
 }

@@ -2,77 +2,31 @@
 @use '../abstracts/colours' as *;
 
 .contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  min-height: 30vh;
+  background-color: $white;
+  padding: 1.2rem 2rem;
 
-.contact-header {
-  color: $orange;
-  width: 100%;
-  text-align: center;
-  font-size: 3rem;
-
-  @include laptop {
-    font-size: 1.8rem;
-  }
-}
-
-.contact-links-wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.contact-link--mail {
-  a {
-    color: $white;
-    text-decoration: underline;
-  }
-}
-
-.contact-link {
-  display: flex;
-  font-weight: 500;
-  margin: 0.5em;
-
-  p {
-    @include mobile {
-      padding-right: 5px;
-      font-size: 1em;
-    }
+  h3 {
+    display: flex;
+    align-items: center;
   }
 
-  &:hover {
-    .social__icon {
-      color: $white;
-    }
+  h3::before {
+    position: relative;
+    counter-increment: section 3;
+    content: '0' counter(section) '.';
+    margin-right: 10px;
+    color: $blue;
+    font-weight: 400;
   }
-}
 
-.email-icon {
-  color: #b03c2c;
-  padding-top: 15px;
-  padding-left: 8px;
-}
-
-.social-github {
-  padding-top: 5px;
-  padding-left: 5px;
-}
-
-.social-linkedin {
-  color: #007bb5;
-  padding-top: 5px;
-  padding-left: 5px;
-}
-
-.social-icon {
-  font-size: 2rem;
-  margin-left: 0.5rem;
-  color: $white;
-
-  &:hover {
-    color: $white;
+  h3::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 3em;
+    height: 1px;
+    // margin-left: 10px;
+    background-color: $blue;
   }
 }
