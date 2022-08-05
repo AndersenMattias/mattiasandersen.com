@@ -5,14 +5,14 @@ import '../../styles/components/_heroBlock.scss';
 
 const HeroBlock = () => {
   return (
-    <div className='hero-wrapper'>
+    <div className='heroBlock-wrapper'>
       <h1 className='hero-header'>
         <div>Hi,</div>
         <div>I’m</div>
         <div>Mattias</div>
         <div>|</div>
         <div className='highlight'>
-          <div>Frontend</div>
+          <div>Software</div>
           <div></div>
         </div>
         <div className='highlight'>
@@ -52,7 +52,7 @@ const HeroBlock = () => {
         </div>
       </div>
       <p className='heroSummary'>
-        I love exploring and creating 🚀 I'm a lifelong learner 🎓
+        I'm a software developer who mainly focus on the frontend of the web.
       </p>
     </div>
   );

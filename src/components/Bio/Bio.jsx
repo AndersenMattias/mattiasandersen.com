@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { profilePic } from '../../assets';
+import { profileAvatar, profilePic } from '../../assets';
 
 import '../../styles/components/_bio.scss';
 
@@ -8,15 +8,13 @@ const Bio = () => {
   return (
     <section className='bio-wrapper'>
       <h2>
-        <div>My</div>
-        <div className='highlight'>
+        <div>
           <div>Skills</div>
-          <div></div>
         </div>
       </h2>
       <div className='bioImage'>
         <div className='image-container'>
-          <img src={profilePic} alt='avatar' />
+          <img src={profileAvatar} alt='avatar' />
         </div>
       </div>
 
@@ -41,7 +39,7 @@ const Bio = () => {
       </div>
 
       <div className='bioText'>
-        <h3>About Me</h3>
+        <h3>A short bio 💻 </h3>
         <p>
           My interest in software development started back in 2019 when I
           decided to figure out what I wanted to study.
